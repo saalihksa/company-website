@@ -8,8 +8,7 @@ import {
   FaBuilding,
   FaHandshake,
   FaUsers,
-  FaAward,
-  FaChartLine
+  FaAward
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -376,7 +375,7 @@ export default function AboutPage() {
                 <h2 className="text-2xl font-bold text-white mb-4">Vizyonumuz</h2>
                 <div className="h-1 w-16 bg-blue-600 mb-6"></div>
                 <p className="text-white/90 leading-relaxed mb-8 flex-grow">
-                  Türkiye'nin gayrimenkul sektöründe lider konuma gelerek, teknoloji ve insan odaklı yaklaşımımızla sektöre yön veren bir marka olmak ve uluslararası standartlarda hizmet kalitesini sürdürülebilir kılmak.
+                  Türkiye&apos;nin gayrimenkul sektöründe lider konuma gelerek, teknoloji ve insan odaklı yaklaşımımızla sektöre yön veren bir marka olmak ve uluslararası standartlarda hizmet kalitesini sürdürülebilir kılmak.
                 </p>
                 
                 <motion.button
