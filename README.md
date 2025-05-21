@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EmlakPlus - Gayrimenkul Kurumsal Websitesi
 
-## Getting Started
+EmlakPlus, modern bir gayrimenkul ve emlak şirketi için tasarlanmış kurumsal bir web sitesidir. Next.js ve React ile geliştirilmiş olup SEO dostu ve modern bir arayüze sahiptir.
 
-First, run the development server:
+## Özellikler
 
+- SEO dostu yapı
+- Responsive tasarım
+- Modern ve şık arayüz
+- Performans odaklı mimari
+- Türkçe içerik
+
+## Kullanılan Teknolojiler
+
+- [Next.js 15](https://nextjs.org/)
+- [React 19](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Next-Sitemap](https://www.npmjs.com/package/next-sitemap)
+
+## Başlangıç
+
+### Gereksinimler
+
+- Node.js 18.0.0 veya üstü
+- npm veya yarn
+
+### Kurulum
+
+1. Projeyi klonlayın:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/username/emlak-website.git
+cd emlak-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Bağımlılıkları yükleyin:
+```bash
+npm install
+# veya
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Geliştirme sunucusunu başlatın:
+```bash
+npm run dev
+# veya
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Tarayıcınızda http://localhost:3000 adresine gidin.
 
-## Learn More
+### Derleme ve Dağıtım
 
-To learn more about Next.js, take a look at the following resources:
+Projeyi derlemek için:
+```bash
+npm run build
+# veya
+yarn build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Derlenmiş versiyonu çalıştırmak için:
+```bash
+npm run start
+# veya
+yarn start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Proje Yapısı
 
-## Deploy on Vercel
+```
+emlak-website/
+├── public/
+│   └── images/       # Görseller
+├── src/
+│   ├── app/          # Next.js App Router sayfaları
+│   ├── components/   # React bileşenleri
+│   │   ├── home/     # Ana sayfa bileşenleri
+│   │   ├── layout/   # Layout bileşenleri
+│   │   ├── properties/ # Gayrimenkul bileşenleri
+│   │   └── ui/       # UI bileşenleri
+│   ├── hooks/        # React hooks
+│   ├── lib/          # Yardımcı kütüphaneler
+│   └── utils/        # Yardımcı fonksiyonlar
+├── .gitignore
+├── next.config.ts
+├── next-sitemap.config.js
+├── package.json
+├── README.md
+└── tsconfig.json
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Lisans
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Bu proje MIT lisansı altında lisanslanmıştır - ayrıntılar için [LICENSE](LICENSE) dosyasına bakın.
+
+## İletişim
+
+Herhangi bir soru veya geri bildirim için lütfen info@emlakplus.com adresine e-posta gönderin.
