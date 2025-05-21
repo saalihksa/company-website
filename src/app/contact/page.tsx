@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaWhatsapp, FaCheckCircle, FaChevronDown, FaMapSigns, FaPaperPlane } from "react-icons/fa";
-import Button from "@/components/ui/Button";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaWhatsapp, FaCheckCircle, FaChevronDown, FaMapSigns, FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useTheme } from "@/components/providers/ThemeProvider";
 

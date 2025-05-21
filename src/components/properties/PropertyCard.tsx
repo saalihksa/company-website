@@ -1,6 +1,5 @@
 "use client";
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { FaBed, FaBath, FaRulerCombined, FaMapMarkerAlt, FaRegHeart, FaHeart } from 'react-icons/fa';
 import { motion } from 'framer-motion';
@@ -14,7 +13,6 @@ type PropertyCardProps = {
   bedrooms: number;
   bathrooms: number;
   size: number;
-  imageUrl: string;
   featured?: boolean;
   type: 'sale' | 'rent';
   listView?: boolean;
@@ -28,7 +26,6 @@ const PropertyCard = ({
   bedrooms,
   bathrooms,
   size,
-  imageUrl,
   featured = false,
   type,
   listView = false,
@@ -201,4 +198,4 @@ const PropertyCard = ({
   );
 };
 
-export default PropertyCard; 
+export default PropertyCard;

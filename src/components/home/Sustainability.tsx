@@ -4,12 +4,9 @@ import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
 import { FaArrowRight, FaTree, FaLeaf, FaSeedling, FaSolarPanel } from 'react-icons/fa';
-import { useTheme } from '@/components/providers/ThemeProvider';
 
 const Sustainability = () => {
   const sectionRef = useRef<HTMLElement>(null);
-  const { theme } = useTheme();
-  const isDarkMode = theme === 'dark';
 
   // Paralaks efekti için scroll değerleri
   const { scrollYProgress } = useScroll({

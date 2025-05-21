@@ -29,16 +29,6 @@ const fadeIn = {
   visible: { opacity: 1 }
 };
 
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
-
 export default function ServicesPage() {
   const { theme } = useTheme();
   const isDarkMode = theme === 'dark';

@@ -4,7 +4,6 @@ import Image from "next/image";
 import { 
   FaPhoneAlt,
   FaArrowRight,
-  FaStar,
   FaChevronDown,
   FaBuilding,
   FaHandshake,
@@ -64,14 +63,6 @@ export default function AboutPage() {
     }
   ];
 
-  // Başarı istatistikleri
-  const statistics = [
-    { number: "2500+", title: "Tamamlanan Satış", icon: <FaBuilding /> },
-    { number: "18", title: "Yıllık Deneyim", icon: <FaChartLine /> },
-    { number: "4500+", title: "Mutlu Müşteri", icon: <FaUsers /> },
-    { number: "25+", title: "Ödül & Başarı", icon: <FaAward /> }
-  ];
-
   return (
     <div className={`pt-0 ${isDarkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
       {/* Hero Section */}
@@ -129,7 +120,7 @@ export default function AboutPage() {
               variants={fadeInUp}
                     className="inline-block px-4 py-1.5 mb-5 bg-blue-800/40 text-blue-100 text-sm font-medium rounded-full backdrop-blur-sm border border-blue-500/20 shadow-lg"
             >
-              2005'ten Beri Hizmetinizdeyiz
+              2005&apos;ten Beri Hizmetinizdeyiz
             </motion.span>
                   
             <motion.h1 
@@ -210,13 +201,13 @@ export default function AboutPage() {
               
               <div className={`space-y-6 ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                 <p className="leading-relaxed">
-                  2005 yılında İstanbul'da küçük bir ofiste başlayan serüvenimiz, bugün Türkiye'nin önde gelen gayrimenkul danışmanlık şirketlerinden biri olma başarısına ulaştı. Kuruluşumuzdan bu yana, sektördeki değişimleri ve yenilikleri yakından takip ederek müşterilerimize en iyi hizmeti sunmayı hedefledik.
+                  2005 yılında İstanbul&apos;da küçük bir ofiste başlayan serüvenimiz, bugün Türkiye&apos;nin önde gelen gayrimenkul danışmanlık şirketlerinden biri olma başarısına ulaştı. Kuruluşumuzdan bu yana, sektördeki değişimleri ve yenilikleri yakından takip ederek müşterilerimize en iyi hizmeti sunmayı hedefledik.
                 </p>
                 <p className="leading-relaxed">
                   Müşteri memnuniyetini her zaman birinci önceliğimiz olarak belirledik ve bu prensip doğrultusunda binlerce ailenin doğru gayrimenkul kararları almasına destek olduk. Pazar analizinden finansal danışmanlığa kadar gayrimenkulle ilgili her alanda uzman kadromuzla yanınızdayız.
                 </p>
                 <p className="leading-relaxed">
-                  Günümüzde 50'den fazla profesyonel gayrimenkul danışmanımız ile konut, işyeri, arsa ve her türlü gayrimenkul alım-satım işlemlerinizde size özel çözümler sunuyoruz. Teknoloji ile geleneksel emlak danışmanlığını birleştirerek sektörde öncü uygulamalara imza atıyoruz.
+                  Günümüzde 50&apos;den fazla profesyonel gayrimenkul danışmanımız ile konut, işyeri, arsa ve her türlü gayrimenkul alım-satım işlemlerinizde size özel çözümler sunuyoruz. Teknoloji ile geleneksel emlak danışmanlığını birleştirerek sektörde öncü uygulamalara imza atıyoruz.
                 </p>
               </div>
               

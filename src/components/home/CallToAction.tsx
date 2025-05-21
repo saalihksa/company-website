@@ -1,8 +1,7 @@
 "use client";
 
 import { useState, useRef } from 'react';
-import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import Link from 'next/link';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { FaQuestionCircle } from 'react-icons/fa';
 import { useRouter } from 'next/navigation';
 import { useTheme } from '@/components/providers/ThemeProvider';

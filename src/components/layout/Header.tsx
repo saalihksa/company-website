@@ -5,19 +5,16 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { 
   FaHome, 
-  FaBuilding, 
   FaPhoneAlt, 
   FaInfoCircle, 
   FaBars, 
   FaTimes, 
   FaTools, 
-  FaBullhorn, 
   FaTimes as FaClose,
   FaMoon,
   FaSun
 } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
-import Button from "@/components/ui/Button";
 import { usePathname } from "next/navigation";
 import { useTheme } from "@/components/providers/ThemeProvider";
 

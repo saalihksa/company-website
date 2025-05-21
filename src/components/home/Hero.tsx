@@ -1,12 +1,11 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
-import { FaHome, FaMapMarkerAlt, FaSearch, FaBuilding, FaChartLine, FaUsers } from "react-icons/fa";
+import { FaHome, FaMapMarkerAlt } from "react-icons/fa";
 
 const Hero = () => {
-  const [isMuted, setIsMuted] = useState(true);
   const [isPlaying, setIsPlaying] = useState(true);
   const [videoError, setVideoError] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -37,7 +36,7 @@ const Hero = () => {
     }, 5000);
     
     return () => clearInterval(slideInterval);
-  }, []);
+  }, [slideTitles.length]);
 
   // Video kontrolünü yönet
   useEffect(() => {
@@ -59,10 +58,10 @@ const Hero = () => {
         video.pause();
       }
       
-      // Ses kontrolü
-      video.muted = isMuted;
+      // Ses kontrolü - doğrudan videoRef üzerinden yönetiliyor
+      video.muted = true; // Videonun her zaman sessiz başlamasını sağlıyoruz
     }
-  }, [isPlaying, isMuted]);
+  }, [isPlaying]);
 
   // Safari için otomatik oynatma özelliğini tekrar dene
   useEffect(() => {
@@ -140,7 +139,7 @@ const Hero = () => {
             className="absolute inset-0 w-full h-full object-cover"
             autoPlay
             loop
-            muted
+            muted // video her zaman sessiz başlayacak
             playsInline
             preload="metadata"
             onError={handleVideoError}

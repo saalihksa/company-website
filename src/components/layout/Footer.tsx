@@ -9,7 +9,6 @@ import {
   FaMapMarkerAlt, 
   FaPhoneAlt, 
   FaEnvelope,
-  FaArrowRight,
   FaYoutube,
   FaChevronRight
 } from "react-icons/fa";
